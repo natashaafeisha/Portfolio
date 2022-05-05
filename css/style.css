@@ -44,6 +44,10 @@ a:hover {
   text-decoration: none;
 }
 
+img{
+    width: 100%;
+}
+
 /* background color divs */
 .section-contact {
   background-color: var(--teal);
@@ -51,7 +55,7 @@ a:hover {
 .gradient {
   background: linear-gradient(
     0deg,
-    rgba(195, 34, 53, 1) 0%,
+    var(--white) 0%,
     rgba(45, 158, 253, 0) 100%
   );
   height: 4px;
@@ -63,7 +67,7 @@ background-color: var(--gray);
 
 /* intro styles */
 #intro {
-  padding: 4rem 1rem 10rem 1rem;
+  padding: 2rem 1rem 10rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -186,9 +190,10 @@ footer ul {
 }
 
 /* projects section */
-#project{
+#project {
     padding: 4rem 1rem;
     color:var(--white);
+    padding-bottom: 0;
     
 }
 
@@ -232,6 +237,23 @@ border-top: 1px solid var(--teal);
 border-radius:25px ;
 padding: 1rem;
 }
+@media (min-width: 550px){
+    article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    .text {
+order: 2;
+text-align: right;
+    }
+}
+#project ul {
+    justify-content: flex-end;
+}
+    
+
+
 
 
 @media (min-width: 850px) {
